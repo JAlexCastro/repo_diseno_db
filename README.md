@@ -171,11 +171,11 @@ La normalización de esta base de datos esta basada en la 3FN, para reducir redu
 ### Lea los tutoriales:
 **1. Clona este repositorio.**
 ```
-git clone </url>
+git clone https://github.com/JAlexCastro/repo_diseno_db.git
 ```
 **2. Ubicate en el directorio raiz del proyecto. **(En la misma ubicación del archivo 'docker-compose')
 ```
-cd  .\NOMBRE_DIR\
+cd  repo_diseno_db
 ```
 **3. Ejecuta el comando para crear e iniciar el conenedor**
 ```
