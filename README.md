@@ -1,12 +1,8 @@
 ## Construyendo una base de datos relacional desde cero usando PostGreSQL
 
-- **Estado del proyecto**: Incompleto
+- **Estado del proyecto**: En desarrollo
 
-**Tabla de contenido**
 
-[TOCM]
-
-[TOC]
 ### Métodos utilizados
 -	Planificación del esquema de base de datos
 -	Construcción del diagrama de relación de entidad

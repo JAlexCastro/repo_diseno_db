@@ -4,7 +4,7 @@ services:
   db:
     image: postgres:13
     restart: always
-    container_name: my_cont_postgres
+    container_name: my_cont_postgres2
     environment:
       POSTGRES_DB: "my_company"
       POSTGRES_USER: "master"
@@ -19,7 +19,7 @@ services:
       - "./codigo_sql/procedimientos_actualizacion.sql:/docker-entrypoint-initdb.d/procedimientos_actualizacion.sql"
       - "./codigo_sql/indices.sql:/docker-entrypoint-initdb.d/indices.sql"
     ports:
-      - "9091:5432"
+      - "9092:5432"
 
 volumes:
   postgre_data_volume: {}
