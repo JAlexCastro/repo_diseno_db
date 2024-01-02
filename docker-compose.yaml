@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    restart: always
+    container_name: my_cont_postgres
+    environment:
+      POSTGRES_DB: "my_company"
+      POSTGRES_USER: "master"
+      POSTGRES_PASSWORD: "master_password"
+    volumes:
+      - "./codigo_sql/postgre_data_volume:/var/lib/postgresql/data"
+      - "./codigo_sql/tablas.sql:/docker-entrypoint-initdb.d/tablas.sql"
+      - "./codigo_sql/funciones.sql:/docker-entrypoint-initdb.d/funciones.sql"
+      - "./codigo_sql/procediminetos_insercion.sql:/docker-entrypoint-initdb.d/procediminetos_insercion.sql"
+      - "./codigo_sql/procedimientos_eliminacion.sql:/docker-entrypoint-initdb.d/procedimientos_eliminacion.sql"
+      - "./codigo_sql/triggers.sql:/docker-entrypoint-initdb.d/triggers.sql"
+      - "./codigo_sql/procedimientos_actualizacion.sql:/docker-entrypoint-initdb.d/procedimientos_actualizacion.sql"
+      - "./codigo_sql/indices.sql:/docker-entrypoint-initdb.d/indices.sql"
+    ports:
+      - "9091:5432"
+
+volumes:
+  postgre_data_volume: {}
+
+#
+# Crear contenedor y BBDD:
+  # CMD: docker-compose up
+# Datos de cone
+
+  # Host Name: 
+  # Port: 9091
+  # Maintenance database: my_company
+  # Username: master
+  # Password: master_password
