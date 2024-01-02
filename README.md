@@ -74,11 +74,13 @@ Son las personas u organizaciones que compran nuestros productos. Almacenará to
 		- Calle
 #### -	 Contactos_clientes
 - Datos de contactos de los clientes. Almacenará los multiples datos de contacto que puede tener un contacto.
+
 		 -Id
 		- Rut_cliente
 		- Teléfono
 #### - Productos
 Son los productos que nuestra empresa comercializa. Almacena toda la infomación de nuestros productos.
+
 		- Codigo
 		- Nombre
 		- Precio
@@ -101,12 +103,14 @@ Los productos pertenecen a una ùnica categoría. Almacenará el nombre y su des
 		- Descripción
 #### - Ventas
 Son las ventas realizadas por los clientes. Almacenan información del clientes y los productos que compró.
+
 		- Factura
 		- Fecha
 		- Rut_cliente
 		- Descuento
 #### - Productos_vendidos
 Son los productos comprados por nuestos clientes. Almacena los productos asociados a la factura.
+
 		- Id_venta
 		- Factura
 		- Codigo_producto
@@ -114,10 +118,12 @@ Son los productos comprados por nuestos clientes. Almacena los productos asociad
 		- Precio
 #### - Ventas_detalles
 Sirve para almacenar los motos totales de las facturas emitidas.
+
 		- Factura
 		- Monto_total
 #### - Auditoria_productos
 Sirve para detectar los cambios realizados en la tabla Productos. Almacena los datos previo a una actualización junto con el usuario y fecha.
+
 		- Id
 		- Codigo
 		- Nombre
@@ -191,9 +197,12 @@ docker compose up
 
 - Nombre del servidor
 
+![](imagenes/PgAdminNombreServidor.png)
+
 
 - Datos de conexion:
 
+![](imagenes/PgAdminDatosConeccion.png)
 
 ### Contacto
 Todos los comentarios son recibidos calurosamente.
