@@ -24,11 +24,10 @@ services:
 volumes:
   postgre_data_volume: {}
 
-#
+
 # Crear contenedor y BBDD:
   # CMD: docker-compose up
-# Datos de cone
-
+# Datos de conexión
   # Host Name: 
   # Port: 9091
   # Maintenance database: my_company

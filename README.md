@@ -179,11 +179,11 @@ cd  repo_diseno_db
 ```
 **3. Ejecuta el comando para crear e iniciar el conenedor**
 ```
-docker compose up
+docker-compose up
 ```
 ### Pasos para conectarse a la base de datos desde el PgAdmin
 
-#### Datos de conección
+#### Datos de conexión
   #####  Name:  Selecciona un nombre
   #####  Host Name:  localhost
   ##### Port: 9091
@@ -196,7 +196,7 @@ docker compose up
 ![](imagenes/PgAdminNombreServidor.png)
 
 
-- Datos de conexion:
+- Datos de conexión:
 
 ![](imagenes/PgAdminDatosConeccion.png)
 
